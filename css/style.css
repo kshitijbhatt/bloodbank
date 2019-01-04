@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 .jumbo-screen{
 	width: 100%;
 	
@@ -6,7 +9,14 @@
 	-moz-box-shadow:    inset 0 0 10vh 8vw #fff;
 	-webkit-box-shadow: inset 0 0 10vh 8vw #fff;
 	box-shadow:         inset 0 0 10vh 8vw #fff;
-	height: 75%;
+	height: 70%;
+}
+
+.bg-home__light{
+	background-color: #f9f9f8;
+	-moz-box-shadow:    inset 0 0 10vh 2vw #fff;
+	-webkit-box-shadow: inset 0 0 10vh 2vw #fff;
+	box-shadow:         inset 0 0 10vh 2vw #fff;
 }
 
 .section-heading:after{
@@ -20,4 +30,43 @@
     position: absolute;
     top: 55px;
     width: 150px;
+}
+
+.cta-section__red{
+    padding: 64px 0;
+    background: transparent;
+    background-image: url('../img/pattern_1.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: initial;
+    background-attachment: fixed;
+    display: block;
+    clear:both;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.cta-section__red:before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:#FE3C47;
+        opacity: 0.95;
+
+        top: 0;
+        left: 0;
+        content: '';
+    }
+
+
+#homeSection_two{
+	position: relative;
+    overflow: hidden;
+}
+
+.appointment-img {
+    height: 650px;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }

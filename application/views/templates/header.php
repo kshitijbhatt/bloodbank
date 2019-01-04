@@ -12,15 +12,11 @@
   	</button>
 		<div class="collapse navbar-collapse" id="navbarColor03">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-					<a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
-					</li>
 					<li class="nav-item">
-					<a class="nav-link" href="<?php echo base_url(); ?>doners">For Doners</a>
-					</li>
-					<li class="nav-item">
+					<?php ?>
 					<a class="nav-link" href="<?php echo base_url(); ?>hospitals">For Hospitals</a>
 					</li>
+					<?php ?>
 					<li class="nav-item">
 					<a class="nav-link" href="<?php echo base_url(); ?>user/login_view">Login</a>
 					</li>

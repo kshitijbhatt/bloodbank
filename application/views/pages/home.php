@@ -11,24 +11,35 @@
 							Donating blood not only saves the life also save donor's lives.
 						</small>
 					</h4>
-					<a class="btn btn-danger text-light my-2" href="<?php echo base_url() ?>">Know More</a>
+					<a class="btn btn-danger text-light my-2" href="#homeSection_one">Know More</a>
 				</div>
-			</div>
-	</div>
-	<div class="container">
-
-		<div class="row">
-			<div class="col-12 text-center">
-				<h2 class="my-2">
-					<small class="text-muted section-heading">Join	 Today</small>
-				</h2>
 			</div>
 		</div>
 	</div>
+
+<section id="homeSection_one" class="row bg-home__light">
+	<div class="col-12 text-center">
+		<h2 class="my-2">
+		<small class="text-muted section-heading">Join	 Today</small>
+		</h2>
+	</div>
 	<?php require_once(FCPATH.'/application/views/templates/registration.php'); ?>
-</div>
-
-	
-
+</section>
+<section class="cta-section__red row">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                        <h2 class="text-light">We are helping people from 40 years</h2>
+                        <p class="text-light">
+                            You can give blood at any of our blood donation venues all over the world. We have total sixty thousands donor centers and visit thousands of other venues on various occasions.                            
+                        </p>
+                        
+                    </div> <!--  end .col-md-8  -->
+                </div> <!--  end .row  -->
+            </div>
+</section>
+<section id="homeSection_two" >
+	<?php require_once(FCPATH.'/application/views/templates/enquiry.php'); ?>
+</section>
 
 </div>

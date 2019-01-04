@@ -61,22 +61,22 @@
 			<div class="col-12"><?php echo @$error;?></div>
 			<div class="form-row">
 			<div class="form-group col-12">
-			<label for="inputFullName">Full Name</label>
-			<input type="text" class="form-control" id="fullName" placeholder="Use space to seperate first and last name" name="fullName" required>
+			<label for="fullReceiverName">Full Name</label>
+			<input type="text" class="form-control" id="fullReceiverName" placeholder="Use space to seperate first and last name" name="fullName" required>
 			<div class="invalid-feedback">
           		Please enter correct name
         	</div>
 			</div>
 			<div class="form-group col-md-6">
-			<label for="inputEmail">Email</label>
-			<input type="email" class="form-control" id="inputEmail" placeholder="" name="email" required>
+			<label for="inputReceiverEmail">Email</label>
+			<input type="email" class="form-control" id="inputReceiverEmail" placeholder="" name="email" required>
 			<div class="invalid-feedback">
           		Please provide an email id
         	</div>
 			</div>
 			<div class="form-group col-md-6">
-			<label for="inputPassword">Password</label>
-			<input type="password" class="form-control" id="inputPassword" placeholder="" name="password" required>
+			<label for="inputReceiverPassword">Password</label>
+			<input type="password" class="form-control" id="inputReceiverPassword" placeholder="" name="password" required>
 			<div class="invalid-feedback">
           		Your password is important, please make sure its unique and strong
         	</div>
@@ -84,8 +84,8 @@
 			</div>
 			<div class="form-row">
 			<div class="form-group col-md-6">
-			<label for="inputPhoneNumber">Phone Number</label>
-			<input type="text" class="form-control" id="inputPhoneNumber" placeholder="" name="phoneNumber" required>
+			<label for="inputPhoneNumberHospital">Phone Number</label>
+			<input type="text" class="form-control" id="inputPhoneNumberHospital" placeholder="" name="phoneNumber" required>
 			<div class="invalid-feedback">
           		Please enter correct phone number
         	</div>
@@ -105,7 +105,7 @@
 			</div>
 			<div class="form-group col-12 col-md">
 			<input type="hidden" class="form-control" id="inputHiddenLocation" placeholder="" name="userLocation" value="Online" required>
-			<input type="hidden" class="form-control" id="inputHiddenType" placeholder="" name="userType" value="Receiver" required>
+			<input type="hidden" class="form-control" id="inputHiddenTypeReceiver" placeholder="" name="userType" value="Receiver" required>
 			<div class="invalid-feedback">
           		Internal Server Error! Please try again.
         	</div>
@@ -152,22 +152,22 @@
 			<div class="col-12"><?php echo @$error;?></div>
 			<div class="form-row">
 			<div class="form-group col-12">
-			<label for="inputFullName">Hospital Name</label>
-			<input type="text" class="form-control" id="fullName" placeholder="Enter hospital name" name="fullName" required>
+			<label for="fullHospitalName">Hospital Name</label>
+			<input type="text" class="form-control" id="fullHospitalName" placeholder="Enter hospital name" name="fullName" required>
 			<div class="invalid-feedback">
           		Please enter correct name
         	</div>
 			</div>
 			<div class="form-group col-md-6">
-			<label for="inputEmail">Email</label>
-			<input type="email" class="form-control" id="inputEmail" placeholder="" name="email" required>
+			<label for="inputHospitalEmail">Email</label>
+			<input type="email" class="form-control" id="inputHospitalEmail" placeholder="" name="email" required>
 			<div class="invalid-feedback">
           		Please provide an email id
         	</div>
 			</div>
 			<div class="form-group col-md-6">
-			<label for="inputPassword">Password</label>
-			<input type="password" class="form-control" id="inputPassword" placeholder="" name="password" required>
+			<label for="inputHospitalPassword">Password</label>
+			<input type="password" class="form-control" id="inputHospitalPassword" placeholder="" name="password" required>
 			<div class="invalid-feedback">
           		Your password is important, please make sure its unique and strong
         	</div>
@@ -175,8 +175,8 @@
 			</div>
 			<div class="form-row">
 			<div class="form-group col-md-6">
-			<label for="inputPhoneNumber">Phone Number</label>
-			<input type="text" class="form-control" id="inputPhoneNumber" placeholder="" name="phoneNumber" required>
+			<label for="inputPhoneNumberReceiver">Phone Number</label>
+			<input type="text" class="form-control" id="inputPhoneNumberReceiver" placeholder="" name="phoneNumber" required>
 			<div class="invalid-feedback">
           		Please enter correct phone number
         	</div>
@@ -196,7 +196,7 @@
 			</div>
 			<div class="form-group col-12 col-md">
 			<input type="hidden" class="form-control" id="inputHiddenBloodType" placeholder="" name="bloodType" value="N/A" required>
-			<input type="hidden" class="form-control" id="inputHiddenType" placeholder="" name="userType" value="Receiver" required>
+			<input type="hidden" class="form-control" id="inputHiddenTypeHospital" placeholder="" name="userType" value="Receiver" required>
 			<div class="invalid-feedback">
           		Internal Server Error! Please try again.
         	</div>
