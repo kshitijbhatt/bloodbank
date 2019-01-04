@@ -15,7 +15,7 @@ public function __construct(){
 	public function index()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('templates/login');
+		$this->load->view('pages/home');
 		$this->load->view('templates/footer');
 		
 	}
@@ -56,7 +56,7 @@ public function __construct(){
 	public function login_view(){
 		
 		$this->load->view('templates/header');
-		$this->load->view("pages/login.php");
+		$this->load->view('templates/login.php');
 		$this->load->view('templates/footer');
 		 
 	}

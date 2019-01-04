@@ -1,14 +1,15 @@
+
 <div class="container py-5">
 
 	<div class="row card-deck">
 		<div class="col-sm-6">
 			<div class="card">
 				<div class="card-header">
-					For Receivers
+					<h4>Receivers</h4>
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">Need blood in emergency?</h5>
-					<p class="card-text">With your support we can save many lives, register today and become a doner.</p>
+					<p class="card-text">With your support we can save many lives, register today and help us grow the blood bank.</p>
 					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalReceiverRegistration">
  					 	Register Now
 					</button>
@@ -18,7 +19,7 @@
 		<div class="col-sm-6">
 			<div class="card text-white bg-danger">
 			<div class="card-header">
-					For Hospitals
+					<h4>Hospitals</h4>
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">List your inventory</h5>
