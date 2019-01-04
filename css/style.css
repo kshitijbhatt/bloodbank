@@ -81,3 +81,26 @@ html {
     bottom: 0;
     left: 0;
 }
+
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as todo operation.
+ */
+ .header--fixed {
+	position: fixed !important;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	top: 0
+  } 
+ .headroom {
+    will-change: transform;
+    transition: transform 200ms ease-in-out;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+	display: none;
+    transform: translateY(-100%);
+}
