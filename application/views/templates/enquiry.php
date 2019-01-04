@@ -8,8 +8,8 @@
 					</div>
 					<div class="d-block d-md-inline-block my-auto col-6">
 						<div class="card">
-							<div class="card-header bg-danger text-light h3 text-center ">
-								REQUEST SAMPLE
+							<div class="card-header bg-danger text-light h4 text-center text-uppercase">
+								Looking For Blood Sample?
 							</div>
 							<div class="card-body">
 								<form class="needs-validation m-0" novalidate role="form" method="post" action="<?php echo base_url('user/register_user'); ?>">
@@ -31,7 +31,7 @@
 													</select>
 												</div>
 												<div class="form-group col-md-6">
-													<label for="enquireLocation">Blood type</label>
+													<label for="enquireLocation">Location</label>
 													<select class="form-control" id="enquireLocation" name="enquireLocation">
 													<option>Delhi</option>
 													<option>Gurugram</option>
@@ -44,7 +44,7 @@
 												</div>
 											</div>	
 											<div class="text-center">
-												<input type="submit" class="btn btn-outline-success mx-auto" name="register" value="Submit Request">
+												<input type="submit" class="btn btn-outline-success mx-auto" name="enquirySubmit" value="Request Sample">
 											</div>
 								
 									</fieldset>
