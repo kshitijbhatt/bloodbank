@@ -196,7 +196,7 @@
 			</div>
 			<div class="form-group col-12 col-md">
 			<input type="hidden" class="form-control" id="inputHiddenBloodType" placeholder="" name="bloodType" value="N/A" required>
-			<input type="hidden" class="form-control" id="inputHiddenTypeHospital" placeholder="" name="userType" value="Receiver" required>
+			<input type="hidden" class="form-control" id="inputHiddenTypeHospital" placeholder="" name="userType" value="Hospital" required>
 			<div class="invalid-feedback">
           		Internal Server Error! Please try again.
         	</div>
