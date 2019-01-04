@@ -8,3 +8,16 @@
 	box-shadow:         inset 0 0 10vh 8vw #fff;
 	height: 75%;
 }
+
+.section-heading:after{
+	background-image: url(../img/separator.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+    height: 24px;
+    left: 50%;
+    margin-left: -75px;
+    position: absolute;
+    top: 55px;
+    width: 150px;
+}

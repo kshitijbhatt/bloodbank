@@ -1,6 +1,6 @@
 <div class="container py-5">
 
-	<div class="row">
+	<div class="row card-deck">
 		<div class="col-sm-6">
 			<div class="card">
 				<div class="card-header">
@@ -85,7 +85,7 @@
 			<div class="form-row">
 			<div class="form-group col-md-6">
 			<label for="inputPhoneNumber">Phone Number</label>
-			<input type="number" class="form-control" id="inputPhoneNumber" placeholder="" name="phoneNumber" required>
+			<input type="text" class="form-control" id="inputPhoneNumber" placeholder="" name="phoneNumber" required>
 			<div class="invalid-feedback">
           		Please enter correct phone number
         	</div>
@@ -146,7 +146,7 @@
                     echo $error_msg;
                   }
             ?>
-			<form class="needs-validation m-0" novalidate role="form" method="post" action="<?php echo base_url('user/register_hospital_user'); ?>">
+			<form class="needs-validation m-0" novalidate role="form" method="post" action="<?php echo base_url('user/register_user'); ?>">
 				
 			<fieldset>
 			<div class="col-12"><?php echo @$error;?></div>
@@ -176,7 +176,7 @@
 			<div class="form-row">
 			<div class="form-group col-md-6">
 			<label for="inputPhoneNumber">Phone Number</label>
-			<input type="number" class="form-control" id="inputPhoneNumber" placeholder="" name="phoneNumber" required>
+			<input type="text" class="form-control" id="inputPhoneNumber" placeholder="" name="phoneNumber" required>
 			<div class="invalid-feedback">
           		Please enter correct phone number
         	</div>
@@ -195,7 +195,7 @@
 			</select>
 			</div>
 			<div class="form-group col-12 col-md">
-			<input type="hidden" class="form-control" id="inputHiddenBloodType" placeholder="" name="userLocation" value="Online" required>
+			<input type="hidden" class="form-control" id="inputHiddenBloodType" placeholder="" name="bloodType" value="N/A" required>
 			<input type="hidden" class="form-control" id="inputHiddenType" placeholder="" name="userType" value="Receiver" required>
 			<div class="invalid-feedback">
           		Internal Server Error! Please try again.

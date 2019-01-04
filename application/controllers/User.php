@@ -15,7 +15,7 @@ public function __construct(){
 	public function index()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('pages/registration');
+		$this->load->view('templates/login');
 		$this->load->view('templates/footer');
 		
 	}
@@ -42,7 +42,8 @@ public function __construct(){
 			$this->session->set_flashdata('success_msg', '<div class="alert alert-dismissible alert-success">
 			<button type="button" class="close" data-dismiss="alert">&times;</button>
 			<strong>Well done!</strong> You successfully registered </div>');
-			redirect('user/login_view');
+			$_SESSION;
+			redirect(base_url());
 			
 		}
 		else{
