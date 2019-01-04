@@ -11,15 +11,15 @@
 							Donating blood not only saves the life also save donor's lives.
 						</small>
 					</h4>
-					<a class="btn btn-danger text-light my-2" href="#homeSection_one">Know More</a>
+					<a class="btn btn-danger text-light my-2" href="#joinnow">Join Now</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-<section id="homeSection_one" class="row bg-home__light">
-	<div class="col-12 text-center">
-		<h2 class="my-2">
+<section id="joinnow" class="row bg-home__light">
+	<div class="col-12 text-center mb-4">
+		<h2 class="position-relative">
 		<small class="text-muted section-heading">Join	 Today</small>
 		</h2>
 	</div>
@@ -38,7 +38,7 @@
                 </div> <!--  end .row  -->
             </div>
 </section>
-<section id="homeSection_two" >
+<section id="enquirenow" >
 	<?php require_once(FCPATH.'/application/views/templates/enquiry.php'); ?>
 </section>
 
