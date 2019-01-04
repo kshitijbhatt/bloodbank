@@ -146,7 +146,7 @@
                     echo $error_msg;
                   }
             ?>
-			<form class="needs-validation m-0" novalidate role="form" method="post" action="<?php echo base_url('user/register_user'); ?>">
+			<form class="needs-validation m-0" novalidate role="form" method="post" action="<?php echo base_url('user/register_hospital_user'); ?>">
 				
 			<fieldset>
 			<div class="col-12"><?php echo @$error;?></div>
@@ -195,7 +195,8 @@
 			</select>
 			</div>
 			<div class="form-group col-12 col-md">
-			<input type="hidden" class="form-control" id="inputHiddenType" placeholder="" name="userType" value="Hospital" required>
+			<input type="hidden" class="form-control" id="inputHiddenBloodType" placeholder="" name="userLocation" value="Online" required>
+			<input type="hidden" class="form-control" id="inputHiddenType" placeholder="" name="userType" value="Receiver" required>
 			<div class="invalid-feedback">
           		Internal Server Error! Please try again.
         	</div>
