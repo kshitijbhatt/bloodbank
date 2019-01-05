@@ -20,7 +20,7 @@
 									<input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="user_email" required>
 									
 									<div class="invalid-feedback">
-									User name is required!
+									Email is required!
 									</div>
 								</div>
 								<div class="form-group">
