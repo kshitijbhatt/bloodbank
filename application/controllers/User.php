@@ -9,19 +9,26 @@ public function __construct(){
 	
 		$this->load->helper('url');
 		$this->load->model('user_model');
-		$this->load->library('session');
+		$this->load->library('session','form_validation');
 
 }
 	public function index()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('pages/home');
+		$this->load->view('templates/registration');
 		$this->load->view('templates/footer');
 		
 	}
 
 	public function register_user(){
- 
+		// Check validation for user input in SignUp form
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean');
+		if ($this->form_validation->run() == FALSE) {
+		$this->load->view('registration_form');
+		}
+		else
+		{
 		$user=array(
 			'user_pass'=>md5($this->input->post('password')),
 			'user_email'=>$this->input->post('email'),
@@ -42,7 +49,7 @@ public function __construct(){
 			$this->session->set_flashdata('success_msg', '<div class="alert alert-dismissible alert-success">
 			<button type="button" class="close" data-dismiss="alert">&times;</button>
 			<strong>Well done!</strong> You successfully registered </div>');
-			redirect(base_url());
+			redirect('user/login');
 			
 		}
 		else{
@@ -51,12 +58,13 @@ public function __construct(){
 			<strong>Oh snap!</strong> The email id is already registered </div>.');
 			redirect('user');		
 		}
+	}
    
 	}
-	public function login_view(){
+	public function login(){
 		
 		$this->load->view('templates/header');
-		$this->load->view('templates/login.php');
+		$this->load->view('templates/login');
 		$this->load->view('templates/footer');
 		 
 	}
@@ -65,25 +73,27 @@ public function __construct(){
 		$user_login=array(
 		
 			'user_email'=>$this->input->post('user_email'),
-			'user_password'=>md5($this->input->post('user_password'))
+			'user_pass'=>md5($this->input->post('user_password'))
 		
 		);
 	
-			$data=$this->user_model->login_user($user_login['user_email'],$user_login['user_password']);
+			$data=$this->user_model->login_user($user_login['user_email'],$user_login['user_pass']);
 				if($data)
 				{
-					$this->session->set_userdata('user_id',$data['id']);
-					$this->session->set_userdata('user_email',$data['email']);
-					$this->session->set_userdata('user_name',$data['user_login']);
+					$this->session->set_userdata('user_id',$data['ID']);
+					$this->session->set_userdata('user_email',$data['user_email']);
+					$this->session->set_userdata('blood_type',$data['blood_type']);
 					$this->session->set_userdata('display_name',$data['display_name']);
+					$this->session->set_userdata('user_phone',$data['user_phone']);
+					$this->session->set_userdata('user_location',$data['display_name']);
 					$this->session->set_userdata('user_type',$data['user_type']);
 	
-					$this->load->view('home.php');
-	
+					redirect(base_url());
+					
 				}
 				else{
 					$this->session->set_flashdata('error_msg', 'Error occured,Try again.');
-					$this->load->view("login.php");
+					redirect('user/login');
 	
 				}
 	

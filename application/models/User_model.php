@@ -16,7 +16,7 @@ public function login_user($email,$pass){
   $this->db->select('*');
   $this->db->from('bb_users');
   $this->db->where('user_email',$email);
-  $this->db->where('user_password',$pass);
+  $this->db->where('user_pass',$pass);
   
 
   if($query=$this->db->get())

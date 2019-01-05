@@ -88,7 +88,7 @@ html{
  * Adding them is left as todo operation.
  */
  .header--fixed {
-	position: fixed !important;
+	position: sticky !important;
 	z-index: 10;
 	height: 75px;
 	right: 0;
@@ -121,5 +121,4 @@ Beautify login page
 	background-image: url('../img/donerDay.jpg');
 	background-position: fixed;
 	background-size: cover;
-	box-shadow: inset -35px -35px 10px 35px rgba(255,255,255,1);
 }
