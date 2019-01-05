@@ -44,9 +44,9 @@ agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/so
 *********
 Resources
 *********
--  `Bootstrap 4.1.3`
+-  `Bootstrap 4.1.3 <https://getbootstrap.com/>`
 -  `jQuery`
--  `Headroom.js`
+-  `Headroom.js <https://wicky.nillia.ms/headroom.js/>`
 -  `User Guide <https://codeigniter.com/docs>`_
 -  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
 -  `Community Forums <http://forum.codeigniter.com/>`_
