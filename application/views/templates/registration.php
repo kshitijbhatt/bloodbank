@@ -142,9 +142,14 @@
 			<div class="col-12">
 			<?php
 			$error_msg=$this->session->flashdata('error_msg');
+			$success_msg=$this->session->flashdata('success_msg');
+			
                   if($error_msg){
                     echo $error_msg;
-                  }
+									}
+									if($success_msg){
+										echo $success_msg;
+									}
             ?>
 			<form class="needs-validation m-0" novalidate role="form" method="post" action="<?php echo base_url('user/register_user'); ?>">
 				

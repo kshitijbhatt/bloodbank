@@ -122,3 +122,14 @@ Beautify login page
 	background-position: fixed;
 	background-size: cover;
 }
+
+.errorLogin:before{
+ content:' ';
+ height: 10vw;
+ width: 10vw;
+ vertical-align: middle;
+ background-size: cover;
+ background-image: url(../img/error.jpg);
+ display: inline-block;
+ margin-right: 2rem;
+}

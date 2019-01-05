@@ -42,14 +42,14 @@ public function __construct(){
 			$this->session->set_flashdata('success_msg', '<div class="alert alert-dismissible alert-success">
 			<button type="button" class="close" data-dismiss="alert">&times;</button>
 			<strong>Well done!</strong> You successfully registered </div>');
-			redirect('user/login');
+			redirect('login');
 			
 		}
 		else{
 			$this->session->set_flashdata('error_msg', '<div class="alert alert-dismissible alert-danger">
 			<button type="button" class="close" data-dismiss="alert">&times;</button>
 			<strong>Oh snap!</strong> The email id is already registered </div>.');
-			redirect('user');		
+			redirect('registration');		
 		}
 	
    
@@ -80,23 +80,38 @@ public function __construct(){
 					$this->session->set_userdata('user_phone',$data['user_phone']);
 					$this->session->set_userdata('user_location',$data['display_name']);
 					$this->session->set_userdata('user_type',$data['user_type']);
-	
-					redirect(base_url());
+					
+					redirect('profile','refresh');
 					
 				}
 				else{
-					$this->session->set_flashdata('error_msg', 'Error occured,Try again.');
-					redirect('user/login');
+					$this->session->set_flashdata('error_msg', '<div class="alert alert-dismissible alert-danger">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>Oh snap!</strong>Incorrect email or password</div>.');
+					redirect('login');
 	
 				}
 	
 	
 	}
 
-	function user_profile(){
-		$this->load->view('templates/header');
-		$this->load->view('user_profile.php');
-		$this->load->view('templates/footer');
+	public function user_profile(){
+		$user_id=$this->session->userdata('user_id');
+		$user_type=$this->session->userdata('user_type');
+
+		if($user_type == "Receiver"){
+			$this->load->view('templates/header');
+			$this->load->view('templates/receiver');
+			$this->load->view('templates/footer');
+		} elseif ($user_type == "Hospital") {
+			
+			$this->load->view('templates/header');
+			$this->load->view('templates/hospital');
+			$this->load->view('templates/footer');
+			# code...
+		} else {
+			redirect(base_url());
+		}
 		 
 	}
 	

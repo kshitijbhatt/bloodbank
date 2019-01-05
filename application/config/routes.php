@@ -53,6 +53,7 @@ $route['user'] = 'user';
 $route['logout'] = 'user/user_logout';
 $route['registration'] = 'user/index';
 $route['login'] = 'user/login';
+$route['profile'] = 'user/user_profile';
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';

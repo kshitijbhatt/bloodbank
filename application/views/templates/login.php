@@ -1,6 +1,14 @@
 <section class="container-fluid my-auto">
 	<div class="row h-100 flex-column justify-content-center align-items-center bg-light">
-					<figure class="d-flex justify-content-center align-items-center mb-2">
+		  
+		  <?php
+			$error_msg=$this->session->flashdata('error_msg');
+                  if($error_msg){
+                    echo $error_msg;
+                  }
+          ?>
+		  
+		  <figure class="d-flex justify-content-center align-items-center mb-2">
 									<img src="<?php echo base_url() ?>/img/blood-sample.svg" alt="Login image" class="border border-danger rounded-circle p-2">
 									
           </figure>
