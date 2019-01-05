@@ -1,5 +1,6 @@
-html {
+html{
 	scroll-behavior: smooth;
+	min-height: 100%;
 }
 .btn-outline-success {
     color: #02B875 !important;
@@ -89,10 +90,16 @@ html {
  .header--fixed {
 	position: fixed !important;
 	z-index: 10;
+	height: 75px;
 	right: 0;
 	left: 0;
 	top: 0
   } 
+
+ .header--fixed--clearfix{
+	 position: relative;
+	 height: 75px;
+ }
  .headroom {
     will-change: transform;
     transition: transform 200ms ease-in-out;
@@ -103,4 +110,16 @@ html {
 .headroom--unpinned {
 	display: none;
     transform: translateY(-100%);
+}
+
+
+/*
+Beautify login page 
+*/
+.login-left--beautify{
+	min-height: 100%;
+	background-image: url('../img/donerDay.jpg');
+	background-position: fixed;
+	background-size: cover;
+	box-shadow: inset -35px -35px 10px 35px rgba(255,255,255,1);
 }

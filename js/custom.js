@@ -4,7 +4,7 @@ var headElem = document.querySelector(".header");
 var headroom = new Headroom(headElem, {
     // vertical offset in px before element is first unpinned
     "offset": 55,
-    "tolerance": 5,
+    "tolerance": 8,
   "classes" : {
     // when element is initialised
     initial : "headroom",

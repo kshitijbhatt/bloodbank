@@ -78,7 +78,7 @@ public function __construct(){
 					$this->session->set_userdata('display_name',$data['display_name']);
 					$this->session->set_userdata('user_type',$data['user_type']);
 	
-					$this->load->view('user_profile.php');
+					$this->load->view('home.php');
 	
 				}
 				else{
