@@ -16,19 +16,24 @@
 		<div class="collapse navbar-collapse" id="navbarColor03">
 				<ul class="navbar-nav ml-auto">
 					<?php ?>
-					<li class="nav-item">
 					<?php 
 					$user_id=$this->session->userdata('user_id');
 					if(!$user_id){
-						echo '<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="'.base_url().'user/login">Login</a>';
-					}
-					else{
-						echo '<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href=" ">Logout</a>';
-					}?>	
+						?>
+					<li class="nav-item">
+						<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="'.base_url().'user/login">Login</a>;
 					</li>
 					<li class="nav-item">
 					<a class="nav-link btn btn-outline-success px-4 mr-4 btn-lg" href="<?php echo base_url()?>user"> Register</a>
 					</li>
+					<?php 
+					}
+					else{
+						?>
+					<li class="nav-item">
+					<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href=" ">Logout</a>
+					</li>
+					<?php } ?>
 				</ul>
 		</div>
 	</nav>
