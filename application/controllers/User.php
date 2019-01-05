@@ -21,14 +21,7 @@ public function __construct(){
 	}
 
 	public function register_user(){
-		// Check validation for user input in SignUp form
-		$this->form_validation->set_rules('email', 'Email', 'trim|required|xss_clean');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean');
-		if ($this->form_validation->run() == FALSE) {
-		$this->load->view('registration_form');
-		}
-		else
-		{
+
 		$user=array(
 			'user_pass'=>md5($this->input->post('password')),
 			'user_email'=>$this->input->post('email'),
@@ -58,7 +51,7 @@ public function __construct(){
 			<strong>Oh snap!</strong> The email id is already registered </div>.');
 			redirect('user');		
 		}
-	}
+	
    
 	}
 	public function login(){
@@ -106,10 +99,11 @@ public function __construct(){
 		$this->load->view('templates/footer');
 		 
 	}
+	
 	public function user_logout(){
  
 		$this->session->sess_destroy();
-		redirect('user/login_view', 'refresh');
+		redirect(base_url(), 'refresh');
 	}
 	
 }

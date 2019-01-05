@@ -21,17 +21,17 @@
 					if(!$user_id){
 						?>
 					<li class="nav-item">
-						<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="'.base_url().'user/login">Login</a>;
+						<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="<?php echo base_url()?>login">Login</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link btn btn-outline-success px-4 mr-4 btn-lg" href="<?php echo base_url()?>user"> Register</a>
+					<a class="nav-link btn btn-outline-success px-4 mr-4 btn-lg" href="<?php echo base_url()?>registration"> Register</a>
 					</li>
 					<?php 
 					}
 					else{
 						?>
 					<li class="nav-item">
-					<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href=" ">Logout</a>
+					<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="<?php echo base_url()?>logout">Logout</a>
 					</li>
 					<?php } ?>
 				</ul>
