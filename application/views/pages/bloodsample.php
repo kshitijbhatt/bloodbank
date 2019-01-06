@@ -2,7 +2,12 @@
 <div class="container-fluid my-4">
 	<div class="row">
 		<div class="col-12">
-			<table class="table table-bordered">
+			<div class="text-center my-3">
+				<h3>
+					List of available blood samples
+				</h3>
+			</div>
+			<table class="table table-bordered my-3">
 				<thead>
 				<tr>
 					
