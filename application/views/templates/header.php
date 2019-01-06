@@ -15,7 +15,10 @@
   	</button>
 		<div class="collapse navbar-collapse" id="navbarColor03">
 				<ul class="navbar-nav ml-auto">
-					<?php ?>
+					<li class="nav-item">
+						<a class="nav-link" href="<?php echo base_url()?>enquiry">Blood Sample</a>
+					</li>
+					
 					<?php 
 					$user_id=$this->session->userdata('user_id');
 					if(!$user_id){
@@ -38,6 +41,7 @@
 					<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="<?php echo base_url()?>logout">Logout</a>
 					</li>
 					<?php } ?>
+
 				</ul>
 		</div>
 	</nav>

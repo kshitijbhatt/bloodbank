@@ -88,7 +88,7 @@ public function __construct(){
 				else{
 					$this->session->set_flashdata('error_msg', '<div class="alert alert-dismissible alert-danger">
 					<button type="button" class="close" data-dismiss="alert">&times;</button>
-					<strong>Oh snap!</strong>Incorrect email or password</div>.');
+					<strong>Oh snap!</strong> Incorrect email or password</div>.');
 					redirect('login');
 	
 				}
