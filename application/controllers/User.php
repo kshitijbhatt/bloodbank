@@ -9,6 +9,7 @@ public function __construct(){
 	
 		$this->load->helper('url');
 		$this->load->model('user_model');
+		$this->load->model('addsample_model');
 		$this->load->library('session','form_validation');
 
 }
@@ -119,6 +120,34 @@ public function __construct(){
  
 		$this->session->sess_destroy();
 		redirect(base_url(), 'refresh');
+	}
+
+	public function hospital_meta(){
+		$hospitalMeta=array(
+			'hospital_id'=>$this->input->post('hospitalID'),
+			'meta_key'=>$this->input->post('metaKey'),			
+			'meta_value'=>$this->input->post('metaValue')
+		);
+
+		// $hospitalMetaKey = $this->input->post('metaKey');
+		// $hospitalMetaValue = $this->input->post('metaValue');
+		print_r($hospitalMeta);
+
+		$sample_check=$this->addsample_model->sample_Existing($hospitalMeta['meta_key']);
+
+		if($sample_check){
+
+			$this->addsample_model->register_sample($hospitalMeta);
+			redirect('profile');
+			
+		} 
+		else{
+
+			$this->addsample_model->update_sample($hospitalMeta);
+			redirect('profile');
+		}
+		
+
 	}
 	
 }

@@ -30,6 +30,10 @@
 					}
 					else{
 						?>
+
+					<li class="nav-item">
+					<a class="nav-link" href="<?php echo base_url()?>profile">Profile</a>
+					</li>
 					<li class="nav-item">
 					<a class="nav-link btn btn-outline-primary px-4 mr-2 btn-lg" href="<?php echo base_url()?>logout">Logout</a>
 					</li>
