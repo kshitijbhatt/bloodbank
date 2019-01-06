@@ -17,6 +17,12 @@ Changelog and New Features
 1. Different User registration process
 2. Single window login for both user types
 
+**************************
+Known Issues
+**************************
+
+1. Could not work on the request sample function - Marked as to do
+
 
 *******************
 Server Requirements
